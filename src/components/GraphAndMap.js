@@ -40,7 +40,6 @@ const GraphAndMap = () => {
       setWorldData(data[58])
     }
     addDiseaseData()
-    console.log('addDiseaseData done')
 
     userState && setSelectedLocation(userState.location)
 
@@ -51,13 +50,11 @@ const GraphAndMap = () => {
       setStories(data)
     }
     addStories()
-    console.log('setStories done')
   }, [userState])
 
   const selectLocationHandler = (location) => {
     dispatch(updateUser({ id: userState.id, location: [location] }))
     // setSelectedLocation(location)
-    console.log(location.country)
   }
 
   // PASS SELECTED LOCATION AS PROP INTO DISEASEGRAPH AND JUST PASS ALL DATA INTO WORLD MAP
