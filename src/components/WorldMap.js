@@ -115,29 +115,30 @@ const WorldMap = ({ selectedLocation }) => {
                     selectedLocation &&
                     selectedLocation.ISO === current.ISO
                   )
-                    return current &&
-                      selectedLocation &&
-                      selectedLocation.ISO === current.ISO ? (
-                      <Geography
-                        key={geo.rsmKey}
-                        geography={geo}
-                        onMouseEnter={onMouseEnter(current)}
-                        onMouseLeave={onMouseLeave}
-                        fill={current ? colorScale(current.active) : '#EEE'}
-                        stroke='blue'
-                        strokeOpacity='1'
-                      />
-                    ) : (
-                      <Geography
-                        key={geo.rsmKey}
-                        geography={geo}
-                        onMouseEnter={onMouseEnter(current)}
-                        onMouseLeave={onMouseLeave}
-                        fill={current ? colorScale(current.active) : '#EEE'}
-                        stroke='black'
-                        strokeOpacity='0.1'
-                      />
-                    )
+                    console.log('Map loaded')
+                  return current &&
+                    selectedLocation &&
+                    selectedLocation.ISO === current.ISO ? (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      onMouseEnter={onMouseEnter(current)}
+                      onMouseLeave={onMouseLeave}
+                      fill={current ? colorScale(current.active) : '#EEE'}
+                      stroke='blue'
+                      strokeOpacity='1'
+                    />
+                  ) : (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      onMouseEnter={onMouseEnter(current)}
+                      onMouseLeave={onMouseLeave}
+                      fill={current ? colorScale(current.active) : '#EEE'}
+                      stroke='black'
+                      strokeOpacity='0.1'
+                    />
+                  )
                 })
               }
             </Geographies>
