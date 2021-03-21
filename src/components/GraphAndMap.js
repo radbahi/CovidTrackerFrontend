@@ -16,6 +16,7 @@ const StyledGraphAndMap = styled.div`
   flex-direction: row;
   justify-content: center;
   margin-bottom: 100px;
+  margin-right: 20px;
 `
 const StyledDropdown = styled.div``
 
@@ -42,7 +43,7 @@ const GraphAndMap = () => {
     addDiseaseData()
 
     userState && setSelectedLocation(userState.location)
-
+    
     const addStories = async () => {
       const { data } = await axios.get(
         'https://agile-mesa-08799.herokuapp.com/stories'

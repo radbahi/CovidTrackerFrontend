@@ -100,7 +100,7 @@
   --marquee-elements: 4;
   --marquee-elements-displayed: 2;
   /* we REALLY need a standard width. Math gets funky when things are flexed.*/
-  /* --marquee-element-width: 35vw; */
+  /* --marquee-element-width: 55vw; */
   /* this below is what works with our script */
   --marquee-element-width: calc(var(--marquee-width)/var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements)*4s)
@@ -157,7 +157,7 @@
   }
   100% {
     transform: translateX(
-      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+      calc(-1 * var(--marquee-element-width) * 3)
     );
   }
 }
@@ -167,7 +167,7 @@
 }
 
 .marquee-content li {
-  padding: 10px;
+  padding: 15px;
   white-space: nowrap;
   flex-basis: 0;
   display: flex;
