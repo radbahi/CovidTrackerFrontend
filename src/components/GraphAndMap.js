@@ -17,6 +17,7 @@ const StyledGraphAndMap = styled.div`
   justify-content: center;
   margin-bottom: 100px;
   margin-right: 20px;
+  margin-left: 20px;
 `
 const StyledDropdown = styled.div``
 
