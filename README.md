@@ -3,8 +3,8 @@ Covid-19 Tracker is a web application created by Radouane 'Red' Bahi, and Kevin 
 Links:
   - Backend: (https://github.com/teapuddles/CovidTrackerBackend)
   - Demo:
-  - Hosted Site (Heroku) (https://agile-mesa-08799.herokuapp.com/)
-
+  - Hosted Site (Heroku) (https://covid19trackerfrontend.herokuapp.com/)
+  
 Front-End technologies used:
   - React
   - Redux
