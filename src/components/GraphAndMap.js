@@ -52,6 +52,7 @@ const GraphAndMap = () => {
       setStories(data)
     }
     addStories()
+    console.log(`GraphandMap ${userState.location}`)
   }, [userState])
 
   const selectLocationHandler = (location) => {

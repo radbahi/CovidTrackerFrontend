@@ -1,6 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { userReducer } from './reducers/userReducers'
 import thunk from 'redux-thunk'
+import { composeWithDevTools } from 'redux-devtools-extension'
 
 // const localStorageToken = localStorage.getItem('token')
 //   ? JSON.parse(localStorage.getItem('token'))
@@ -29,7 +30,7 @@ const rootReducer = combineReducers({
 const store = createStore(
   rootReducer,
   initialState,
-  applyMiddleware(...middleware)
+  composeWithDevTools(applyMiddleware(...middleware))
 )
 
 export default store

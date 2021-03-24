@@ -45,14 +45,13 @@ export const register = (username, password) => async (dispatch) => {
     { username, password },
     config
   ) //pass all these arguments in and then extract data from the response
-
+    console.log(response)
   if (response.data.status === 500) {
     dispatch({ type: 'USER_REGISTER_FAIL', payload: response.data })
   } else {
-    dispatch({ type: 'USER_LOGIN_SUCCESS', payload: response.data.user })
+    localStorage.setItem('token', response.data.token)
+    dispatch({ type: 'USER_LOGIN_SUCCESS', payload: response.data })
   } //we want the user to be immediately logged in if registration is successful
-
-  localStorage.setItem('token', response.data.token)
 }
 
 export const updateUser = (user) => async (dispatch) => {
