@@ -45,7 +45,6 @@ export const register = (username, password) => async (dispatch) => {
     { username, password },
     config
   ) //pass all these arguments in and then extract data from the response
-    console.log(response)
   if (response.data.status === 500) {
     dispatch({ type: 'USER_REGISTER_FAIL', payload: response.data })
   } else {

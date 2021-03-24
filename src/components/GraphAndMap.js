@@ -44,7 +44,7 @@ const GraphAndMap = () => {
     addDiseaseData()
 
     userState && setSelectedLocation(userState.location)
-    
+
     const addStories = async () => {
       const { data } = await axios.get(
         'https://agile-mesa-08799.herokuapp.com/stories'
@@ -52,7 +52,6 @@ const GraphAndMap = () => {
       setStories(data)
     }
     addStories()
-    console.log(`GraphandMap ${userState.location}`)
   }, [userState])
 
   const selectLocationHandler = (location) => {
