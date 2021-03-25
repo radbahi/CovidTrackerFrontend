@@ -1,6 +1,6 @@
 import { Navbar, Nav, Button } from 'react-bootstrap'
 import React from 'react'
-import logo from '../covidLogo.png'
+import logo from '../pictures/covidLogo.png'
 import { useSelector, useDispatch } from 'react-redux'
 import { logout } from '../actions/userActions.js'
 
