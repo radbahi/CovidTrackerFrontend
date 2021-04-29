@@ -1,4 +1,14 @@
-Covid-19 Tracker is a web application created by Radouane 'Red' Bahi, and Kevin Gleeson. Due to Covid-19 information varying so widely all over the world, this app was created to be a central hub for commonly asked global/country specific statistics. 
+## Covid-19 Tracker
+
+Covid-19 Tracker is a web application created by Radouane 'Red' Bahi, and Kevin Gleeson. Due to Covid-19 information varying so widely all over the world, this app was created to be a central hub for commonly asked global/country specific statistics. Yeah, it isn't the most creative name.
+
+## How to use?
+
+- Upon visiting the site for the first time, you'll be directed to the login page. Click the Register button below to create an account.
+- You'll be automatically logged in and taken to the main page with the world map and the graph. Select a nation on top of the graph to highlight it and have that nation's data on the graph.
+- You may also hover over a country on the map for a tooltip of their data.
+- Select "Switch to stories" for current headlines regarding the coronavirus.
+- Also feel free to check out the "About us" on the navbar at the top.
 
 ## Links:
   - Backend: (https://github.com/teapuddles/CovidTrackerBackend)
